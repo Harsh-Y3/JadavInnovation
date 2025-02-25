@@ -50,11 +50,13 @@ function App() {
 
   ];
 
+  const OurServiceStyle = "";
+
   return (
     <>
-      <div className="bg-blue-300 w-full h-screen m-0 p-0 scroll-smooth">
+      <div className="bg-blue-200 w-full h-screen m-0 p-0 scroll-smooth">
         {/* navigation bar */}
-        <div className="bg-blue-600">
+        <div className="bg-blue-950">
   <nav className="flex flex-col md:flex-row justify-between items-center p-5 h-auto md:h-20">
     <img src={logo} alt="Organization logo" className="w-[150px] md:w-[200px] mt-0 md:mt-[-10px]" />
     <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
@@ -68,28 +70,33 @@ function App() {
 </div>
 
         {/* Hero Section */}
-        <section className="flex flex-col md:flex-row items-center justify-between p-5 md:p-20 md:bg-cover md:bg-center" >
+        <section className="flex flex-col mb-20 md:flex-row items-center justify-between mt-10 p-5 md:p-20 md:bg-cover md:bg-center" >
+          <div className=' flex flex-row items-center h-96'>
   <motion.div 
-    className="text-left bg-white bg-opacity-75 p-5 rounded-md"
+    className=" text-left bg-logoColor bg-opacity-75 p-5  rounded-md h-[300px]"
     initial={{ opacity: 0, x: 0 }} 
     whileInView={{ opacity: 1, x: 50 }} 
     transition={{ duration: 1 }} 
     viewport={{ once: true }}
   >
-    <h2 className="text-2xl md:text-3xl lg:text-4xl text-blue-900">Explore . Finance . Solution</h2>
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">Welcome to jadav innovation</h1>
+    <div className="">
+    <h2 className="text-2xl md:text-3xl lg:text-4xl text-blue-900">Innovative . Creative . Explore</h2>
+    <h1 className="text-4xl md:text-5xl lg:text-4xl pr-[300px] font-bold">Welcome to </h1>
+    <p className="text-4xl md:text-5xl lg:text-4xl font-bold">JADAV INNOVATIONS</p>
     <button className="border-2 border-black rounded-md bg-blue-200 mt-10 px-4 py-2 md:px-6 md:py-3">Book now</button>
+    </div>
   </motion.div>
-  <div className="relative mt-10 md:mt-0 hidden md:block">
-    <motion.img
+  <div className="relative rounded-lg mt-10 md:mt-0 hidden md:block">
+    <motion.img 
       initial={{ opacity: 0, x: 50 }} 
       whileInView={{ opacity: 1, x: 0 }} 
       transition={{ duration: 1.5 }} 
       viewport={{ once: true }}
       src={compimage}
       alt="Speaker"
-      className="rounded-lg w-full md:w-[800px] h-auto "
+      className="rounded-lg  w-[800px] h-[500PX] pl-10 "
     />
+  </div>
   </div>
 </section>
 
@@ -130,6 +137,98 @@ function App() {
             src="https://andit.co/projects/html/wingtrip/assets/img/event/event-organize-img.png" alt="image" className="w-[260rem] h-auto" />
           </div>
         </section>
+{/* our service */}
+      <div>
+        <section className='bg-red-300 h-[550px]'>
+          <div className='pt-10'>
+            <div className='text-start '>
+              <h1 className='pt-10 text-4xl font-bold text-blue-900 pl-7'>
+                <span className='border-t-[10px] border-t-red-500 ' >OU</span>R SERVICES
+              </h1>
+            </div>
+            <div>
+              <div className="grid grid-cols-4 gap-10 pt-16 pl-8 p-5">
+                <div className=''>
+                  <motion.p 
+                 
+                  className='text-3xl font-bold '>Branding</motion.p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold'>Outdoor Marketing</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div> 
+                  <p className='text-3xl font-bold'>Digital Marketing </p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                <p className='text-3xl font-bold'>Product Launch</p>
+                <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold pt-5'>Movie Promotions</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold pt-5 '>Road Show</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                 <p className='text-3xl font-bold pt-5'> Print And Advertisement </p>
+                 <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold pt-5'>Event Set-up</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold pt-5'>Live Show</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div>
+                  <p className='text-3xl font-bold pt-5'>Event Management</p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div> 
+                  <p className='text-3xl font-bold pt-5'>Digital PR </p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+                <div> 
+                  <p className='text-3xl font-bold pt-5'>Theme Parties/ Decorations </p>
+                  <motion.div 
+                   initial={{ opacity: 0, x: 0 }} whileInView={{width: 50, opacity: 1, x: 0 }} transition={{ duration: 1,}} viewport={{ once: true }}
+                  className='border-b-[3.5px] pb-2  border-b-blue-900 w-28'></motion.div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
         {/* our work */}
         <section className="bg-blue-300">
   <motion.h1 
