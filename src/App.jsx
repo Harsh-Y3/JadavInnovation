@@ -3,7 +3,7 @@ import './App.css'
 import logo from './assets/logo.png'
 import compimage from './assets/compimage.jpg'
 import {motion,useInView, useScroll, useTransform, useMotionValueEvent} from 'framer-motion'
-import meet from './assets/IMG_2212.jpg'
+import contact from './assets/contact.png'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -82,7 +82,7 @@ function App() {
     <div className="">
     <h2 className="text-2xl md:text-3xl lg:text-4xl text-blue-900">Innovative . Creative . Explore</h2>
     <h1 className="text-4xl md:text-5xl lg:text-4xl pr-[300px] font-bold">Welcome to </h1>
-    <p className="text-4xl md:text-5xl lg:text-4xl font-bold">JADAV INNOVATIONS</p>
+    {/* <p className="text-4xl md:text-5xl lg:text-4xl font-bold">JADAV INNOVATIONS</p> */}
     <button className="border-2 border-black rounded-md bg-blue-200 mt-10 px-4 py-2 md:px-6 md:py-3">Book now</button>
     </div>
   </motion.div>
@@ -334,97 +334,7 @@ function App() {
 </section>
 
 
-      {/* contact section */}
-      {/* <section className="bg-black flex flex-col justify-evenly md:flex-row items-center md:justify-between p-5 md:p-20">
-        
-    
       
-      <div className="space-y-4">
-        <form className="grid grid-cols-3 space-x-4">
-          <input
-            type="text"
-            name="firstName"
-            placeholder="First Name"
-            className=""
-            required
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name"
-            className="w-1/2 p-2 "
-            required
-            onChange={handleChange}
-          />
-        
-        <input
-          type="text"
-          name="mobile"
-          placeholder="Mobile Number"
-          className="w-full p-2 "
-          required
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          className="w-full p-2 "
-          required
-          onChange={handleChange}
-        />
-      
-          <input
-            type="text"
-            name="service"
-            placeholder="Select Service or Write own your own"
-            className="w-full p-2 "
-            required
-            value={formData.service}
-            onChange={handleChange}
-            onFocus={() => setIsDropdownOpen(true)}
-          />
-          {isDropdownOpen && (
-            <div className="absolute z-10 w-full mt-1 bg-white border rounded">
-              {services.map((service) => (
-                <div
-                  key={service}
-                  className="p-2 hover:bg-gray-200"
-                  onClick={() => handleSelectService(service)}
-                >
-                  {service}
-                </div>
-              ))}
-            </div>
-          )}
-        <textarea name="description" id="" placeholder='Desciption'></textarea>
-        <input 
-        type="text"
-        name="service"
-        placeholder="What service do you required"
-        className="w-full p-2 border rounded"
-        required
-        onChange={handleChange} 
-        />
-        <button
-          onClick={sendWhatsAppMessage}
-          className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600"
-        >
-          Send via WhatsApp
-        </button>
-        </form>
-    
-    </div>
-    
-    <div className="text-center pr-10">
-          <h1 className='text-5xl text-center pt-10 text-[150px] text-blue-900'>Lest's Get</h1>
-          <div className='text-end'><h1 className='text-5xl text-start pt-5 text-[150px] text-blue-900'>In</h1></div>
-          <h1 className='text-5xl text-start pt-10 text-[150px] text-blue-900'>Touch</h1>
-        </div>
- 
-      </section> */}
-
 {/*  */}
 {/* new contact section */}
 
@@ -575,7 +485,7 @@ function App() {
       <div className="w-full lg:w-1/3">
         <img 
           className='h-full w-full lg:w-[500px] rounded-3xl object-cover'
-          src={meet} 
+          src={contact} 
           alt="" 
         />
       </div>
@@ -585,7 +495,7 @@ function App() {
 
 {/*  */}
 
-
+{/* 
 <main className="max-w-screen pl-[80px] mix-blend-multiply"> 
   <div className="relative overflow-hidden w-full" 
   style={
@@ -607,7 +517,7 @@ function App() {
         ))} 
         </div> 
         </div>
-         </main>
+         </main> */}
 
         {/* footer section */}
         <footer className="bg-gray-100 text-gray-700 py-10 px-5">
